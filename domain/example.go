@@ -1,8 +1,8 @@
 package domain
 
-type Example struct {
+type Album struct {
 }
 
-func NewExample() *Example {
-	return &Example{}
+func NewAlbum() *Album {
+	return &Album{}
 }

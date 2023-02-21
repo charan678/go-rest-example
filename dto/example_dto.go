@@ -1,7 +1,8 @@
 package dto
 
-var ExampleDTO struct {
-    ID    string `json"-"`
-    Name  string `form:"name" json:"name" binding:"required"`
-    Color string `form:"color" json:"color" binding:"required,oneof=blue yellow"`
+type AlbumDTO struct {
+	ID     string  `json:"id"`
+	Title  string  `json:"title"`
+	Artist string  `json:"artist"`
+	Price  float64 `json:"price"`
 }

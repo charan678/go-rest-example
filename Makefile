@@ -7,7 +7,7 @@ build:
 	GOARCH=amd64 GOOS=linux go build -o ${BINARY_NAME}-linux main.go
 
 run: build
-	./${BINARY_NAME}
+	./${BINARY_NAME}-linux
 
 clean:
 	go clean
